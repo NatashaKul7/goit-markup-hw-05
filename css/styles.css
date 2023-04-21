@@ -29,7 +29,7 @@
 
   /* Animation */
 
-  --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-fast: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   --anim-slow: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -168,6 +168,9 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition: color var(--anim-fast), background-color var(--anim-fast),
+    shadow var(--anim-fast);
 }
 
 .current {
@@ -200,6 +203,9 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition: color var(--anim-fast), background-color var(--anim-fast),
+    shadow var(--anim-fast);
 }
 .contact {
   font-style: normal;
@@ -248,6 +254,9 @@ body {
   background-color: var(--iris-bg-cl);
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  transition: color var(--anim-fast), background-color var(--anim-fast),
+    shadow var(--anim-fast);
 }
 
 .hero-button {
@@ -342,6 +351,9 @@ body {
   fill: var(--white);
   background-color: var(--iris-bg-cl);
   border-radius: 50%;
+
+  transition: color var(--anim-fast), background-color var(--anim-fast),
+    shadow var(--anim-fast);
 }
 
 .social-link:hover,
@@ -410,6 +422,9 @@ body {
   border-radius: 4px;
 
   color: var(--light-slate);
+
+  transition: color var(--anim-fast), background-color var(--anim-fast),
+    shadow var(--anim-fast);
 }
 
 .customer-link:hover,
@@ -477,7 +492,7 @@ body {
 
   background-color: rgba(46, 47, 66, 0.4);
 
-  transition: opacity var(--anim-slow) visibility var(--anim-slow);
+  transition: opacity var(--anim-slow), visibility var(--anim-slow);
 }
 
 .backdrop.is-hidden {
@@ -520,6 +535,9 @@ body {
   border-color: var(--navy-blue-modal);
   color: var(--navy-blue);
   background-color: var(--cornflower-bg-cl);
+
+  transition: color var(--anim-fast), background-color var(--anim-fast),
+    shadow var(--anim-fast);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -623,6 +641,9 @@ body {
 }
 .card-list .link {
   display: block;
+
+  transition: color var(--anim-fast), background-color var(--anim-fast),
+    shadow var(--anim-fast);
 }
 .card-list .link:hover,
 .card-list .link:focus {
