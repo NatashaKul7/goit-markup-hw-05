@@ -559,7 +559,7 @@ body {
   overflow: hidden;
 }
 
-.card-label {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -579,8 +579,8 @@ body {
   transition: transform var(--anim-fast);
 }
 
-.card-list-item:hover .card-label,
-.card-list-item:focus .card-label {
+.card-link:hover .overlay,
+.card-link:focus .overlay {
   transform: translateY(0);
 }
 
@@ -612,7 +612,8 @@ body {
   border: 1px solid var(--cornflower);
   border-radius: 4px;
 
-  transition: border var(--anim-fast);
+  transition: border var(--anim-fast), color var(--anim-fast),
+    background-color var(--anim-fast), shadow var(--anim-fast);
 }
 
 .work-section .button:hover,
